@@ -61,7 +61,7 @@ function App() {
 
   function CustomBarTooltip(input) {
     const theme = useTheme()
-    const text = `${input.data.indexValue} : Rp${numberWithCommas(
+    const text = `${input.data.indexValue}: Rp${numberWithCommas(
       input.data.value
     )}`
     return (
@@ -79,7 +79,7 @@ function App() {
             }}
           >
             <div style={theme.tooltip.basic}>
-              <span style={{ fontSize: '14px' }}>
+              <span style={{ fontSize: '14px', fontWeight: 'bold' }}>
                 {text.replace(/_/g, ' ')}
               </span>
             </div>
